@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'rest_framework',
+    'rest_framework.authtoken',
     'rangefilter',
     'app',
 ]
@@ -143,7 +144,19 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+# Base url to serve media files  
+MEDIA_URL = '/media/'
+  
+# Path where media is stored  
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',  # <-- And here
+    ],
+}
