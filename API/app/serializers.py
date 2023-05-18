@@ -12,5 +12,6 @@ class CandidateSerializer(serializers.ModelSerializer):
             "date_of_birth",
             "department_type",
             "experience",
-            "resume" "created_at",
+            "resume",
+            "created_at",
         )
