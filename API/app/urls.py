@@ -1,8 +1,14 @@
 from django.urls import path
 
-from .views import CandidateListAPIView, CandidateResumeDownloadAPIView, CandidateView
+from .views import (
+    CandidateListAPIView,
+    CandidateResumeDownloadAPIView,
+    CandidateView,
+    UserLoginView,
+)
 
 urlpatterns = [
+    path("login/", UserLoginView.as_view()),
     path(
         "register/",
         CandidateView.as_view({"post": "create"}),
