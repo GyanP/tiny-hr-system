@@ -235,7 +235,6 @@ const ApplyForm = () => {
                 <Form.Label>Resume *</Form.Label>
                 <Form.Control id="fileUpload" isInvalid={errors.resume !== ""} onChange={(event: any) => {
                     setResume(event.target.files[0]);
-                    console.log(event.target.files[0].name, "ssss")
                     setErrors({ ...errors, resume: "" })
                 }}
                     type="file"

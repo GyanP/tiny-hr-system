@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Button, Table } from "react-bootstrap";
-import { getCandidatesApi } from "../../apis";
+import { downloadFileApi, getCandidatesApi } from "../../apis";
 import { useSelector } from "react-redux";
 import { Icandidate } from "../../models";
-import { BASE_URL } from "../../axiosInstance";
 
 const ApplicationList = () => {
 
@@ -18,7 +17,7 @@ const ApplicationList = () => {
     }, [isLoggedIn])
 
     const onDownload = (id: number) => {
-        window.open(`${BASE_URL}/candidates/${id}`)
+        downloadFileApi(id)
     }
 
     return (
