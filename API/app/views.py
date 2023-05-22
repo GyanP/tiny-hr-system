@@ -48,7 +48,7 @@ class CandidateListAPIView(ListAPIView):
 class CandidateResumeDownloadAPIView(ListAPIView, RetrieveAPIView):
     queryset = Candidate.objects.all()
     serializer_class = CandidateSerializer
-    # permission_classes = (IsAdminUser,)
+    permission_classes = (IsAdminUser,)
 
     def get(self, request, pk, format=None):
         queryset = Candidate.objects.get(id=pk)
