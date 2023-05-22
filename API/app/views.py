@@ -40,7 +40,7 @@ class CandidateView(viewsets.ModelViewSet):
 
 
 class CandidateListAPIView(ListAPIView):
-    queryset = Candidate.objects.all()
+    queryset = Candidate.objects.all().order_by('-created_at')
     serializer_class = CandidateSerializer
     permission_classes = (IsAdminUser,)
 
