@@ -21,7 +21,12 @@
 ``` python manage.py runserver ```
 
 
-## Run test case
+## Create Super User
+
+``` python manage.py createsuperuser ```
+
+
+## Run TestCase
 
 ``` python manage.py test ```
 
