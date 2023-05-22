@@ -1,0 +1,39 @@
+.logoImg {
+  width: 30px;
+  margin: 0px 6px;
+}
+.pagewrapper {
+  width: 100%;
+  height: 88vh;
+  font-family: "Roboto";
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.not_allowed {
+  cursor: not-allowed;
+}
+
+.navbarStyles {
+  z-index: 9999999;
+}
+
+.profileIcon {
+  background-color: #f6ca65;
+  height: 43px;
+  width: 43px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.userName {
+  color: #005b96;
+  font-weight: 700;
+}

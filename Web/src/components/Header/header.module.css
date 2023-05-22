@@ -1,0 +1,31 @@
+.logoImg {
+    width: 30px;
+    margin: 0px 6px;
+  }
+
+  .navbarStyles {
+    z-index: 999;
+  }
+
+  .logoutBtn{
+    color: red;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .profileIcon {
+    background-color: #f6ca65;
+    height: 43px;
+    width: 43px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .userName {
+    color: #005b96;
+    font-weight: 700;
+  }
+  
