@@ -18,6 +18,7 @@
 
 ``` python manage.py migrate ```
 
+``` python manage.py runserver ```
 
 
 ## Run test case
