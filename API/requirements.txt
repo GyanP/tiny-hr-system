@@ -1,6 +1,7 @@
 black==22.6.0
 Django==4.0.6
 django-admin-rangefilter==0.10.0
+django-cors-headers==4.0.0 
 django_environ==0.10.0
 djangorestframework==3.13.1
 flake8==6.0.0
