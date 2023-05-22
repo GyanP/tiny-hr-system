@@ -42,8 +42,6 @@ const ApplyForm = () => {
     }
 
 
-
-
     const handleChange = (target: any) => {
         const { name, value } = target;
         let _errors = JSON.parse(JSON.stringify(errors));

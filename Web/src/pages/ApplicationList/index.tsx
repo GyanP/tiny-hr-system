@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Table } from "react-bootstrap";
-import { downloadFileApi, getCandidatesApi } from "../../apis";
+import { getCandidatesApi } from "../../apis";
 import { useSelector } from "react-redux";
 import { Icandidate } from "../../models";
 import { BASE_URL } from "../../axiosInstance";

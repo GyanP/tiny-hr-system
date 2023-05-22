@@ -63,22 +63,5 @@ const registerCandidateApi = async (
   }
 };
 
-const downloadFileApi = async (
-  id: number,
-  successCallback?: (data: any) => void,
-  errorCallback?: (error: any) => void
-) => {
-  try {
-    let response: any = await axiosInstance.get(`/candidates/${id}`);
-    const { data } = response;
-    successCallback && successCallback(data)
-    return data;
-  } catch (error: any) {
-    const { response } = error;
-    const { data } = response;
-    errorCallback && errorCallback(data);
-    return [];
-  }
-};
 
-export { loginApi, getCandidatesApi, registerCandidateApi, downloadFileApi };
+export { loginApi, getCandidatesApi, registerCandidateApi };
